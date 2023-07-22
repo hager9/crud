@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+  
+
+
+    <div class="container py-5">
+      <label for="productName">productName:</label>
+      <input type="text" class="form-control mb-4 mt-2" id="productName" placeholder="Product Name.." />
+      <label for="productPrice">productPrice:</label>
+      <input type="number" class="form-control mb-4 mt-2" id="productPrice" placeholder="Product Price.." />
+      <label for="productCategory">productCategory:</label>
+      <input type="text" class="form-control mb-4 mt-2" id="productCategory" placeholder="Product Category.." />
+      <label for="productDesc">productDesc:</label>
+      <textarea
+        type="text"
+        class="form-control mb-4 mt-2"
+        id="productDesc"
+        placeholder="Product Desc.."
+      ></textarea>
+      <button class="btn btn-primary text-white mb-5" onclick="addProduct()" id="addProduct">Add Product</button>
+
+      <input type="search" oninput="searchProduct()" id="searchInput" class="form-control w-50 p-3 mx-auto" placeholder="Search Product...">
+
+
+      <table class="table mt-5 text-center">
+        <thead>
+          <th>Index</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Category</th>
+          <th>Product Desc</th>
+          <th>Update</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
